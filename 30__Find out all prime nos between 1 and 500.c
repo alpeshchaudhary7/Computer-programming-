@@ -1,0 +1,20 @@
+#include<stdio.h>
+intmain()
+{
+inti,a,j;
+ for(i=2;i<=500;i++)
+{
+a=1;
+ for(j=2;j<i;j++)
+{
+if(i%j==0)
+{
+a = 0; 
+break; 
+}
+}
+if(a==1)
+printf("%d\n",i); 
+}
+return0; 
+}
